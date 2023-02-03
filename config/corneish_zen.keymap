@@ -70,8 +70,8 @@
                         label = "MISC";
                         bindings = <
    &bootloader   &trans  &trans     &trans    &trans      &trans    &trans    &trans    &trans    &bootloader
-   &trans     &trans     &LC(C)     &LC(V)    &kp CAPS    &kp C_PREV &kp C_VOL_UP &kp C_VOL_DN &kp C_NEXT &trans
-   &trans     &trans     &LC(LS(C)) &LC(LS(V)) &trans      &trans    &kp C_PP  &trans    &trans    &trans
+   &trans     &trans     &kp LC(C)     &kp LC(V)    &kp CAPS    &kp C_PREV &kp C_VOL_UP &kp C_VOL_DN &kp C_NEXT &trans
+   &trans     &trans     &kp LC(LS(C)) &kp LC(LS(V)) &trans      &trans    &kp C_PP  &trans    &trans    &trans
                          &trans     &trans    &trans      &trans    &trans    &trans
                          >;
                 };
