@@ -10,7 +10,6 @@
 
 / {
         chosen {
-                //zmk,matrix_transform = &default_transform;
                 zmk,matrix_transform = &five_column_transform;
         };
 
@@ -28,8 +27,8 @@
                 };
 
                 sym_layer {
-                        bindings = <
                         label = "SYM";
+                        bindings = <
    &trans       &trans     &euro     &kp AMPS  &degr      &kp PIPE &kp HASH  &kp LBRC &kp RBRC  &trans
    &trans       &kp TILDE  &kp STAR  &kp GRAVE &kp SQT    &kp AT   &kp EXCL  &kp LBKT &kp RBKT  &kp DLLR
    &trans       &trans     &kp PRCNT &kp CARET &kp MINUS  &kp PLUS &kp EQUAL &kp LPAR &kp RPAR  &kp BSLH
@@ -38,8 +37,8 @@
                 };
 
                 num_layer {
-                        bindings = <
                         label = "NUM";
+                        bindings = <
    &kp F12   &kp F7    &kp F8    &kp F9    &trans      &trans    &kp N7    &kp N8     &kp N9   &trans
    &kp F11   &kp F4    &kp F5    &kp F6    &trans      &kp PLUS  &kp N4    &kp N5     &kp N6   &kp N0
    &kp F10   &kp F1    &kp F2    &kp F3    &trans      &kp EQUAL &kp N1    &kp N2     &kp N3   &kp DOT
@@ -48,8 +47,8 @@
                 };
 
                 accents_layer {
-                        bindings = <
                         label = "ACC";
+                        bindings = <
    &trans   &trans   &e_aig   &e_grv   &trans   &dead_uml   &u_grv   &i_cir   &o_cir   &trans
    &a_grv   &a_cir   &e_cir   &trans   &trans   &dead_cir   &u_cir   &i_uml   &o_uml   &trans
    &trans   &trans   &c_ced   &trans   &trans   &trans      &trans   &trans   &trans   &trans
@@ -58,8 +57,8 @@
                 };
 
                 nav_layer {
-                        bindings = <
                         label = "NAV";
+                        bindings = <
    BT0        BT1        BT2        BT3       &bt BT_CLR  &kp HOME  &kp PG_DN &kp PG_UP &kp END   &trans
    &kp LGUI   &kp LALT   &kp LCTRL  &kp LSHFT &trans      &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT &trans
    &trans     &trans     &trans     &trans    &trans      &trans    &trans    &trans    &trans    &trans
@@ -68,8 +67,8 @@
                 };
 
                 misc_layer {
-                        bindings = <
                         label = "MISC";
+                        bindings = <
    &bootloader   &trans  &trans     &trans    &trans      &trans    &trans    &trans    &trans    &bootloader
    &trans     &trans     &LC(C)     &LC(V)    &kp CAPS    &kp C_PREV &kp C_VOL_UP &kp C_VOL_DN &kp C_NEXT &trans
    &trans     &trans     &LC(LS(C)) &LC(LS(V) &trans      &trans    &kp C_PP  &trans    &trans    &trans
