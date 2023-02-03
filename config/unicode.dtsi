@@ -1,0 +1,251 @@
+/ {
+    macros {
+
+        e_aig: e_aig {
+            label = "E_AIG";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <0>;
+            tap-ms = <0>;
+            bindings
+                = <&macro_tap &kp LS(LC(U))>
+                , <&macro_tap &kp KP_N0 &kp KP_N0 &kp E &kp KP_N9>
+                , <&macro_tap &kp SPACE>
+                ;
+        };
+
+        e_grv: e_grv {
+            label = "E_GRV";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <0>;
+            tap-ms = <0>;
+            bindings
+                = <&macro_tap &kp LS(LC(U))>
+                , <&macro_tap &kp KP_N0 &kp KP_N0 &kp E &kp KP_N8>
+                , <&macro_tap &kp SPACE>
+                ;
+        };
+
+        e_cir: e_cir {
+            label = "E_CIR";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <0>;
+            tap-ms = <0>;
+            bindings
+                = <&macro_tap &kp LS(LC(U))>
+                , <&macro_tap &kp KP_N0 &kp KP_N0 &kp E &kp A>
+                , <&macro_tap &kp SPACE>
+                ;
+        };
+
+        e_uml: e_uml {
+            label = "E_UML";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <0>;
+            tap-ms = <0>;
+            bindings
+                = <&macro_tap &kp LS(LC(U))>
+                , <&macro_tap &kp KP_N0 &kp KP_N0 &kp E &kp B>
+                , <&macro_tap &kp SPACE>
+                ;
+        };
+
+        a_grv: a_grv {
+            label = "A_GRV";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <0>;
+            tap-ms = <0>;
+            bindings
+                = <&macro_tap &kp LS(LC(U))>
+                , <&macro_tap &kp KP_N0 &kp KP_N0 &kp E &kp KP_N0>
+                , <&macro_tap &kp SPACE>
+                ;
+        };
+
+        a_cir: a_cir {
+            label = "A_CIR";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <0>;
+            tap-ms = <0>;
+            bindings
+                = <&macro_tap &kp LS(LC(U))>
+                , <&macro_tap &kp KP_N0 &kp KP_N0 &kp E &kp KP_N2>
+                , <&macro_tap &kp SPACE>
+                ;
+        };
+
+        a_uml: a_uml {
+            label = "A_UML";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <0>;
+            tap-ms = <0>;
+            bindings
+                = <&macro_tap &kp LS(LC(U))>
+                , <&macro_tap &kp KP_N0 &kp KP_N0 &kp E &kp KP_N4>
+                , <&macro_tap &kp SPACE>
+                ;
+        };
+
+        i_cir: i_cir {
+            label = "I_CIR";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <0>;
+            tap-ms = <0>;
+            bindings
+                = <&macro_tap &kp LS(LC(U))>
+                , <&macro_tap &kp KP_N0 &kp KP_N0 &kp E &kp E>
+                , <&macro_tap &kp SPACE>
+                ;
+        };
+
+        i_uml: i_uml {
+            label = "I_UML";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <0>;
+            tap-ms = <0>;
+            bindings
+                = <&macro_tap &kp LS(LC(U))>
+                , <&macro_tap &kp KP_N0 &kp KP_N0 &kp E &kp F>
+                , <&macro_tap &kp SPACE>
+                ;
+        };
+
+        o_cir: o_cir {
+            label = "O_CIR";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <0>;
+            tap-ms = <0>;
+            bindings
+                = <&macro_tap &kp LS(LC(U))>
+                , <&macro_tap &kp KP_N0 &kp KP_N0 &kp F &kp KP_N4>
+                , <&macro_tap &kp SPACE>
+                ;
+        };
+
+        o_uml: o_uml {
+            label = "O_UML";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <0>;
+            tap-ms = <0>;
+            bindings
+                = <&macro_tap &kp LS(LC(U))>
+                , <&macro_tap &kp KP_N0 &kp KP_N0 &kp F &kp KP_N6>
+                , <&macro_tap &kp SPACE>
+                ;
+        };
+
+        u_grv: u_grv {
+            label = "U_GRV";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <0>;
+            tap-ms = <0>;
+            bindings
+                = <&macro_tap &kp LS(LC(U))>
+                , <&macro_tap &kp KP_N0 &kp KP_N0 &kp F &kp KP_N9>
+                , <&macro_tap &kp SPACE>
+                ;
+        };
+
+        u_cir: u_cir {
+            label = "U_CIR";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <0>;
+            tap-ms = <0>;
+            bindings
+                = <&macro_tap &kp LS(LC(U))>
+                , <&macro_tap &kp KP_N0 &kp KP_N0 &kp F &kp B>
+                , <&macro_tap &kp SPACE>
+                ;
+        };
+
+        u_uml: u_uml {
+            label = "U_UML";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <0>;
+            tap-ms = <0>;
+            bindings
+                = <&macro_tap &kp LS(LC(U))>
+                , <&macro_tap &kp KP_N0 &kp KP_N0 &kp F &kp C>
+                , <&macro_tap &kp SPACE>
+                ;
+        };
+
+        c_ced: c_ced {
+            label = "C_CED";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <0>;
+            tap-ms = <0>;
+            bindings
+                = <&macro_tap &kp LS(LC(U))>
+                , <&macro_tap &kp KP_N0 &kp KP_N0 &kp E &kp KP_N7>
+                , <&macro_tap &kp SPACE>
+                ;
+        };
+
+        degr: degr {
+            label = "DEGR";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <0>;
+            tap-ms = <0>;
+            bindings
+                = <&macro_tap &kp LS(LC(U))>
+                , <&macro_tap &kp KP_N0 &kp KP_N0 &kp B &kp KP_N0>
+                , <&macro_tap &kp SPACE>
+                ;
+        };
+
+        euro: euro {
+            label = "EURO";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <0>;
+            tap-ms = <0>;
+            bindings
+                = <&macro_tap &kp LS(LC(U))>
+                , <&macro_tap &kp KP_N2 &kp KP_N0 &kp A &kp C>
+                , <&macro_tap &kp SPACE>
+                ;
+        };
+
+        dead_cir: dead_cir {
+            label = "DEAD_CIR";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <0>;
+            tap-ms = <0>;
+            bindings
+                = <&macro_tap &kp LS(LC(U))>
+                , <&macro_tap &kp KP_N0 &kp KP_N3 &kp KP_N0 &kp KP_N2>
+                , <&macro_tap &kp SPACE>
+                ;
+        };
+
+        dead_uml: dead_uml {
+            label = "DEAD_UML";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <0>;
+            tap-ms = <0>;
+            bindings
+                = <&macro_tap &kp LS(LC(U))>
+                , <&macro_tap &kp KP_N0 &kp KP_N3 &kp KP_N0 &kp KP_N8>
+                , <&macro_tap &kp SPACE>
+                ;
+        };
+    };
+};
